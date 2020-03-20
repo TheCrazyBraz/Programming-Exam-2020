@@ -37,7 +37,7 @@ public class TTT {
 			if(won(el)){	// If the player made a winning move
 				game = false;
 				disp(el);	// Display board after putting last move
-				System.out.println("\n\n"+((p1t)?p1:p2)+" won the game!");
+				System.out.println("\n\n"+((p1t)?p1:p2)+" Vandt spillet!");
 				break;
 			}	
 			p1t = !p1t;
