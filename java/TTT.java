@@ -13,9 +13,9 @@ public class TTT {
 			el[i] = i+1+"";
 		}
 		Scanner sc = new Scanner (System.in);
-		System.out.print("Enter player 1 name: ");
+		System.out.print("Enter player 1 navn: ");
 		String p1 = sc.nextLine();
-		System.out.print("Enter player 2 name: ");
+		System.out.print("Enter player 2 navn: ");
 		String p2 = sc.nextLine();
 		boolean p1t = true;	// true = player1's turn, false = player2's turn
 		boolean game = true;	// true = game not over

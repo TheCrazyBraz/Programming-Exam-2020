@@ -65,7 +65,7 @@ function draw() {
         y2 = (floor(winner[1]/3))*sc + sc/2;
         strokeWeight(20);
         line(x1, y1, x2, y2);
-        playerinfo.html("Player "+((arr[winner[0]] === -1)?"1 (X) ":"2 (O) ") + "Won!");	// Update player info
+        playerinfo.html("Player "+((arr[winner[0]] === -1)?"1 (X) ":"2 (O) ") + "Vandt!");	// Update player info
     }
 }
 function mouseReleased(){	// Take user input at a cell
@@ -87,8 +87,8 @@ function keyPressed(){
 		reset();
 	}
 }
-function checkwon(){				// Check if in current board state player has won
-	if(count === 9) {			// If 9 turns are over, and no one has won, game is draw
+function checkwon(){				
+	if(count === 9) {			// If 9 turns are over, and no one has won, game = draw
 		gameover= true;
 	}
 	for(i = 0;i < 3;i++)			// Check columns
